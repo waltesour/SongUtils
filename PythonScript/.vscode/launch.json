@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: 当前文件",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args":
+            [
+                //imageNameListGen.py
+                "-i","C:/Program Files/PCL_1.9.1/3rdParty/OpenNI2/Lib",
+                "-o","C:/code/workProject/Express/pclLibName.txt",
+                // //0_parserTest.py
+                // "--input-path","input",
+                // "--output-path","out",
+                // "--test","ts"
+            ]
+        }
+    ]
+}
