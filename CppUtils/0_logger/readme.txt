@@ -1,4 +1,4 @@
-Logger¹¤¾ßÓÃ·¨ÈçÏÂ£º
+Loggerå·¥å…·å‡½æ•°çš„ä½¿ç”¨æ–¹æ³•
 
 #include "Logger.h"
 int main()
