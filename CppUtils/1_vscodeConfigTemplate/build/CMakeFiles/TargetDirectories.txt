@@ -1,0 +1,3 @@
+C:/code/testProject/0_configTemplate/build/CMakeFiles/rebuild_cache.dir
+C:/code/testProject/0_configTemplate/build/CMakeFiles/test.dir
+C:/code/testProject/0_configTemplate/build/CMakeFiles/edit_cache.dir

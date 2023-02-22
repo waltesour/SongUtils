@@ -1,0 +1,2 @@
+所有视频文件放在video目录，抽帧结果将保存到img目录
+还是task.json里指定opencv

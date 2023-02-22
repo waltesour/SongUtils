@@ -1,0 +1,33 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        //步骤一：创建build文件
+        {
+            "type": "shell",
+            "label": "createBuildDir",
+            "command": "mkdir",
+            "args": ["build"],
+            "options": {"cwd": "${workspaceFolder}"}, //执行路径
+            "problemMatcher": ["$gcc"],
+        },
+        //步骤二：cmake生成Makefile
+        {
+            "type": "shell",
+            "label": "cmakeGetMakefiles",
+            "command": "cmake",
+            //第二个参数为指定的编辑器名称，第三个参数为CMakeLists.txt所在路径
+            "args": ["-G","MinGW Makefiles","${workspaceFolder}"], 
+            "options": {"cwd": "${workspaceFolder}/build"},//执行路径
+            "dependsOn":["createBuildDir"],  // 表示在 步骤一 任务结束后进行
+        },
+        //步骤三：make编译
+        {
+            "type": "shell",
+            "label": "makeGetExe",
+            "command": "mingw32-make.exe",
+            "args": [],
+            "options": {"cwd": "${workspaceFolder}/build"},//执行路径
+            "dependsOn":["cmakeGetMakefiles"],//表示在 步骤二 任务结束后进行
+        },
+    ]
+}
